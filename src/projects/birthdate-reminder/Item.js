@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 
 import styles from './item.module.scss';
-import unnamed from '../assets/images/unnamed.png';
+import unnamed from '../../assets/images/unnamed.png';
 
 const cx = classNames.bind(styles);
 

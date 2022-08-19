@@ -1,0 +1,39 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #eae7e7;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.main-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.content {
+    border-radius: 0 0 5px 5px;
+    width: 500px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+//Item
+.info {
+    display: flex;
+    padding: 20px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 12px;
+    flex: 1;
+}
+
+.price {
+    background-color: #deeefd;
+    color: #5988d5;
+    border-radius: 2px;
+    font-weight: 500;
+}
