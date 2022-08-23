@@ -16,7 +16,7 @@ function Item({ data }) {
                     {show ? '-' : '+'}
                 </div>
             </div>
-            {show ? <div>{data.body}</div> : null}
+            {show && <div>{data.body}</div>}
         </div>
     );
 }
