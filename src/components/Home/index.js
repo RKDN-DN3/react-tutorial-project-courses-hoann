@@ -9,7 +9,15 @@ const cx = classNames.bind(styles);
 function Home() {
     return (
         <div className={cx('wrapper')}>
-            <span style={{ textAlign: 'center', fontSize: '2rem', fontWeight: 600, marginTop: '30px' }}>
+            <span
+                style={{
+                    textAlign: 'center',
+                    fontSize: '2rem',
+                    fontWeight: 600,
+                    marginTop: '30px',
+                    marginBottom: '3rem',
+                }}
+            >
                 All project in Reactjs course
             </span>
             <div className={cx('courses')}>

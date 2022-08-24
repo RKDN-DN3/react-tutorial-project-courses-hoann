@@ -7,19 +7,22 @@
 }
 
 .courses {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    width: 90vw;
+    max-width: 1120px;
+    margin: 0px auto 2rem;
+    display: grid;
+    gap: 3rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
 }
 
 .course {
-    width: 366px;
-    height: 366px;
+    width: 352px;
+    height: 320px;
     background-color: white;
     border-radius: 0 0 5px 5px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 20px 10px -15px rgb(197 192 249 / 20%);
-    margin: 50px;
+    margin: 10px;
     text-decoration: none;
     color: black;
 
@@ -32,10 +35,12 @@
 .preview {
     width: 100%;
     border-radius: 5px 5px 0 0;
+    height: 264px;
+    object-fit: cover;
 }
 
 .info {
-    padding: 20px;
+    padding: 10px;
     font-weight: 600;
     font-size: 18px;
 }
