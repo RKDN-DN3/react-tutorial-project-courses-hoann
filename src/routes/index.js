@@ -15,6 +15,9 @@ import ccordion_thumb from '../assets/images/accordion_thumb.png';
 import Menu from '../projects/menu';
 import menu_thumb from '../assets/images/menu_thumb.png';
 
+import Tabs from '../projects/tabs';
+import tabs_thumb from '../assets/images/tabs_thumb.png';
+
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home' },
     { path: routes.birthdate, component: Birthdate, name: 'Birthdates reminder', img: birthdate_thumb },
@@ -22,6 +25,7 @@ const publicRoutes = [
     { path: routes.reviews, component: Reviews, name: 'Reviews', img: reviews_thumb },
     { path: routes.accordion, component: Accordion, name: 'Accordion', img: ccordion_thumb },
     { path: routes.menu, component: Menu, name: 'Menu', img: menu_thumb },
+    { path: routes.tabs, component: Tabs, name: 'Tabs', img: tabs_thumb },
 ];
 
 export { publicRoutes };
