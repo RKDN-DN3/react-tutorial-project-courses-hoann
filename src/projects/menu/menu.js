@@ -5,17 +5,17 @@ import styles from './menu.module.scss';
 const cx = classNames.bind(styles);
 
 function Menu({ data }) {
-    console.log(data);
-    const img = data.img.toString();
     return (
         <div className={cx('wrapper-menu')}>
-            <img src={require(img)} alt="dsa"></img>
+            <img className={cx('image')} src={data.image} alt={data.mainTitle}></img>
             <div className={cx('menu-item')}>
-                <div className="header">
-                    <span>{data.title}</span>
-                    <span>{data.price}</span>
+                <div className={cx('header')}>
+                    <span style={{ paddingBottom: '5px', fontWeight: 700 }}>{data.mainTitle}</span>
+                    <span style={{ color: '#c59d5f', fontWeight: 700 }}>${data.price}</span>
                 </div>
-                <span>{data.desc}</span>
+                <span style={{ color: '#617d98' }}>
+                    {data.mainTitle} {data.subTitle}
+                </span>
             </div>
         </div>
     );

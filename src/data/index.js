@@ -6,6 +6,7 @@ export const MENUS = [
         subTitle: 'with Avocado, Bok Choy \u0026 Yuzu Kosho Mayo',
         image: 'https://media.blueapron.com/recipes/33266/c_main_dish_images/1659366784-5200-0014-4748/0705_2P12_Steelhead-Trout-Poke-Bowl_243_horiz_Web_splash_feature.jpg',
         overall: 40,
+        price: 25,
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ export const MENUS = [
         subTitle: 'with Arugula \u0026 Grape Salad',
         image: 'https://media.blueapron.com/recipes/33459/c_main_dish_images/1659366864-8426-0031-5130/0905_2P19_Pancetta-Jam-Parm-Mayo-Craft-Burger_470_Web_splash_feature.jpg',
         overall: 40,
+        price: 40,
     },
     {
         id: 3,
@@ -22,6 +24,7 @@ export const MENUS = [
         subTitle: 'with Mushrooms \u0026 Kale',
         image: 'https://media.blueapron.com/recipes/34303/c_main_dish_images/1659368924-8018-0052-7429/H_E_CheesyTruffleCavatappi_horiz_splash_feature.jpg',
         overall: 5,
+        price: 30,
     },
     {
         id: 4,
@@ -30,6 +33,7 @@ export const MENUS = [
         subTitle: 'with Bok Choy \u0026 Mushrooms',
         image: 'https://media.blueapron.com/recipes/34304/c_main_dish_images/1659368901-8426-0047-0741/H_E_SoyMisoChickenUdonNoodle_horiz_Web_splash_feature.jpg',
         overall: 5,
+        price: 50,
     },
     {
         id: 5,
@@ -38,6 +42,7 @@ export const MENUS = [
         subTitle: 'with Red Peppers, Peas \u0026 Raisins',
         image: 'https://media.blueapron.com/recipes/34306/c_main_dish_images/1659368873-8018-0048-0221/H_E_SpanishBeefRice_horiz_splash_feature.jpg',
         overall: 5,
+        price: 10,
     },
     {
         id: 6,
@@ -46,6 +51,7 @@ export const MENUS = [
         subTitle: 'with Garlic-Tomato Couscous, Labneh \u0026 Almonds',
         image: 'https://media.blueapron.com/recipes/23762/c_main_dish_images/1659669369-49-0037-3035/0905_2P7_Morroccan-Chicken_064_Web_splash_feature.jpg',
         overall: 25,
+        price: 25,
     },
     {
         id: 7,
@@ -54,6 +60,7 @@ export const MENUS = [
         subTitle: 'with Spinach, Tomatoes \u0026 Ricotta',
         image: 'https://media.blueapron.com/recipes/33203/c_main_dish_images/1659670776-48-0102-4280/0905_2P11_Pesto-Chicken-Orzo_221_Web_splash_feature.jpg',
         overall: 35,
+        price: 40,
     },
     {
         id: 8,
@@ -62,6 +69,7 @@ export const MENUS = [
         subTitle: 'with Coconut Chips \u0026 Sesame Seeds',
         image: 'https://media.blueapron.com/recipes/33685/c_main_dish_images/1661525730-48-0003-2475/0905_2PV2_Sweet-Chili-Udon__026_Web_splash_feature.jpg',
         overall: 25,
+        price: 30,
     },
     {
         id: 9,
@@ -70,6 +78,7 @@ export const MENUS = [
         subTitle: 'with Spanish-Spiced Rice \u0026 Lemon Mayo',
         image: 'https://media.blueapron.com/recipes/33775/c_main_dish_images/1659669284-15110-0081-2731/0905_2PM_Spanish-Spiced-Beef_034_Web_splash_feature.jpg',
         overall: 25,
+        price: 100,
     },
     {
         id: 10,
@@ -78,5 +87,6 @@ export const MENUS = [
         subTitle: 'with Roasted Potato Wedges',
         image: 'https://media.blueapron.com/recipes/33783/c_main_dish_images/1661527371-51-0001-0556/0905_2P9_Shrimp-Tacos-Peach-Salsa_071_Web_splash_feature.jpg',
         overall: 30,
+        price: 20,
     },
 ];
