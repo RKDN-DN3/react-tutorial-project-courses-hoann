@@ -1,0 +1,34 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+:global(.underline) {
+    background: #c59d5f !important;
+}
+
+.group-menu {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #c59d5f;
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin: 0 5px;
+    transition: all 0.3s linear;
+
+    &:hover {
+        background: #c59d5f;
+        color: white;
+    }
+}

@@ -90,7 +90,7 @@ function Reviews() {
                             <button
                                 className={cx('random')}
                                 onClick={() => {
-                                    let index = Math.floor(Math.random() * 10);
+                                    let index = Math.floor(Math.random() * lstUser.length);
                                     setUser(lstUser[index]);
                                     setId(index);
                                 }}
