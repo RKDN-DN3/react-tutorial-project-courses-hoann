@@ -1,9 +1,9 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding-top: 100px;
+    height: 1000px;
 }
 
 :global(.underline) {
@@ -19,15 +19,18 @@
     width: 200px;
     display: flex;
     flex-direction: column;
+    margin-right: 50px;
+    margin-top: 5px;
 }
 
 .tab-name {
     background: transparent;
     border: none;
-    font-size: 1.5rem;
-    padding-bottom: 15px;
+    font-size: 1.4rem;
     cursor: pointer;
     transition: all 0.3s linear;
+    margin-bottom: 15px;
+    padding: 4px 0;
 
     &:hover {
         color: #2caeba;
@@ -36,8 +39,47 @@
 }
 
 .content {
-    background-color: yellow;
+    display: flex;
+    flex-direction: column;
     height: 200px;
     width: 100%;
     max-width: 900px;
+}
+
+.job {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.company {
+    font-weight: 700;
+    background-color: #dae2ec;
+    border-radius: 2px;
+    color: #617d98;
+    display: inline-block;
+    padding: 3px 8px;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.dates {
+    color: #617d98;
+    margin-bottom: 12px;
+}
+
+.dutie {
+    color: #324d67;
+}
+
+.more {
+    background-color: #2caeba;
+    border-radius: 4px;
+    color: #bff8fd;
+    padding: 10px 50px;
+    width: fit-content;
+    border: none;
+    margin: 40px auto 0;
+    cursor: pointer;
+    font-weight: 600;
 }
