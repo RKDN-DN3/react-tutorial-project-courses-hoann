@@ -1,0 +1,43 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+:global(.underline) {
+    background: #2caeba !important;
+}
+
+.center {
+    display: flex;
+}
+
+.tabs {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-name {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+    &:hover {
+        color: #2caeba;
+        box-shadow: -2px 0 #2caeba;
+    }
+}
+
+.content {
+    background-color: yellow;
+    height: 200px;
+    width: 100%;
+    max-width: 900px;
+}
