@@ -39,7 +39,13 @@ function Tabs() {
             <div className={cx('center')}>
                 <div className={cx('tabs')}>
                     {tab.map((tag, index) => (
-                        <button className={cx('tab-name')} key={tag.id} onClick={() => setValue(index)}>
+                        <button
+                            className={cx('tab-name', value === index && 'active')}
+                            key={tag.id}
+                            onClick={() => {
+                                setValue(index);
+                            }}
+                        >
                             {tag.company}
                         </button>
                     ))}
