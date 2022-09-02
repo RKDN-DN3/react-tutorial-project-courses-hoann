@@ -6,6 +6,7 @@ const routers = {
     accordion: '/accordion',
     menu: '/menu',
     tabs: '/tabs',
+    lorem: '/lorem',
 };
 
 export default routers;
