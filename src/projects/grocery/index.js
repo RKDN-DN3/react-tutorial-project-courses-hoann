@@ -19,6 +19,10 @@ function Grocery() {
 
     const handleAddGrocery = (e) => {
         e.preventDefault();
+        if (grocery.trim().length === 0) {
+            setAlert({ message: 'Please Enter Value', type: 'danger' });
+            return;
+        }
         if (status === 'Submit') {
             setAlert({ message: 'Item Added To The List', type: 'success' });
             setClear(true);
