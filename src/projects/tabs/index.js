@@ -42,9 +42,7 @@ function Tabs() {
                         <button
                             className={cx('tab-name', value === index && 'active')}
                             key={tag.id}
-                            onClick={() => {
-                                setValue(index);
-                            }}
+                            onClick={() => setValue(index)}
                         >
                             {tag.company}
                         </button>

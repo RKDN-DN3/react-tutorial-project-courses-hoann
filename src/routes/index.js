@@ -18,6 +18,9 @@ import menu_thumb from '../assets/images/menu_thumb.png';
 import Tabs from '../projects/tabs';
 import tabs_thumb from '../assets/images/tabs_thumb.png';
 
+import Slider from '../projects/slider';
+import slider_thumb from '../assets/images/slider_thumb.png';
+
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home' },
     { path: routes.birthdate, component: Birthdate, name: 'Birthdates reminder', img: birthdate_thumb },
@@ -26,6 +29,7 @@ const publicRoutes = [
     { path: routes.accordion, component: Accordion, name: 'Accordion', img: ccordion_thumb },
     { path: routes.menu, component: Menu, name: 'Menu', img: menu_thumb },
     { path: routes.tabs, component: Tabs, name: 'Tabs', img: tabs_thumb },
+    { path: routes.slider, component: Slider, name: 'Slider', img: slider_thumb },
 ];
 
 export { publicRoutes };
