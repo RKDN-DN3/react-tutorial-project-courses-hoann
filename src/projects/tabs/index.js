@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import className from 'classnames/bind';
 import ReactLoading from 'react-loading';
+import { FaAngleDoubleRight } from 'react-icons/fa';
 
 import styles from './tabs.module.scss';
 
@@ -30,7 +31,6 @@ function Tabs() {
         );
     }
 
-    const handleShowTag = (value) => {};
     const job = tab[value];
     return (
         <div className={cx('wrapper', 'container')}>
@@ -38,8 +38,12 @@ function Tabs() {
             <div className={cx('underline')}></div>
             <div className={cx('center')}>
                 <div className={cx('tabs')}>
-                    {tab.map((tag) => (
-                        <button className={cx('tab-name')} key={tag.id} onClick={() => handleShowTag(tag.company)}>
+                    {tab.map((tag, index) => (
+                        <button
+                            className={cx('tab-name', value === index && 'active')}
+                            key={tag.id}
+                            onClick={() => setValue(index)}
+                        >
                             {tag.company}
                         </button>
                     ))}
@@ -48,9 +52,15 @@ function Tabs() {
                     <span className={cx('job')}>{job.title}</span>
                     <span className={cx('company')}>{job.company}</span>
                     <span className={cx('dates')}>{job.dates}</span>
-                    {job.duties.map((dutie) => (
-                        <p>{dutie}</p>
+                    {job.duties.map((dutie, index) => (
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <FaAngleDoubleRight color="#2caeba" style={{ marginRight: '30px' }} />
+                            <p key={index} className={cx('dutie')}>
+                                {dutie}
+                            </p>
+                        </div>
                     ))}
+                    <button className={cx('more')}>MORE INFO</button>
                 </div>
             </div>
         </div>

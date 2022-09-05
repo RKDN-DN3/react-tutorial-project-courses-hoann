@@ -1,0 +1,89 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+:global(.main-title) {
+    font-weight: 500;
+    color: #324d67;
+    font-size: 2.5rem;
+}
+.center {
+    display: flex;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 200px;
+    left: 580px;
+    text-align: center;
+    align-items: center;
+    max-width: 800px;
+    opacity: 0;
+}
+
+.avatar {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #bcccdc;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    position: absolute;
+    background-color: #617d98;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    height: fit-content;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 100;
+    transition: all 0.3s linear;
+    &:hover {
+        background-color: #ba5d2c;
+    }
+}
+
+.name {
+    font-weight: 600;
+    color: #ba5d2c;
+}
+
+.title {
+    color: #324d67;
+}
+
+.quote {
+    color: #617d98;
+}
+
+.previous {
+    top: 360px;
+    left: 500px;
+}
+
+.next {
+    top: 360px;
+    right: 460px;
+}
+
+.activeSlide {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.lastSlide {
+    transform: translateX(-100%);
+}
+
+.nextSlide {
+    transform: translateX(100%);
+}
