@@ -1,0 +1,105 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+    transition: all 0.3s linear;
+
+    &:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.form {
+    display: flex;
+    margin-top: 20px;
+}
+
+:global(.main-title) {
+    text-align: center;
+}
+
+.grocery {
+    flex: 1;
+    outline: none;
+    border: none;
+    background-color: #f1f5f8;
+    border-radius: 5px 0px 0px 5px;
+    padding: 8px 20px;
+    font-size: 16px;
+}
+
+.action {
+    border: none;
+    background-color: #a5d5f8;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border-radius: 0px 5px 5px 0px;
+    padding: 5px 15px;
+    letter-spacing: 1px;
+
+    &:hover {
+        background-color: #49a6e9;
+        color: white;
+    }
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.todo {
+    margin: 10px 0px;
+    display: flex;
+    transition: all 0.3s linear;
+    padding: 8px 20px;
+    align-items: center;
+
+    &:hover {
+        background-color: #f1f5f8;
+        border-radius: 3px;
+    }
+}
+
+.content {
+    flex: 1;
+}
+
+.clear-btn {
+    color: #e66b6b;
+    background-color: transparent;
+    border: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+    &:hover {
+        color: #bb2525;
+    }
+}
+
+.success {
+    text-align: center;
+    background-color: #d4edda;
+    border-radius: 3px;
+}
+
+.danger {
+    text-align: center;
+    background-color: #f8d7da;
+    border-radius: 3px;
+}
