@@ -7,6 +7,9 @@ const routers = {
     menu: '/menu',
     tabs: '/tabs',
     slider: '/slider',
+    lorem: '/lorem',
+    color: '/color-genarate',
+    grocery: '/grocery-bud',
 };
 
 export default routers;
