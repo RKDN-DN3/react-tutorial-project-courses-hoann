@@ -30,6 +30,8 @@ import color_thumb from '../assets/images/color_thumb.png';
 import Grocery from '../projects/grocery';
 import grocery_thumb from '../assets/images/grocery_thumb.png';
 
+import Navbar from '../projects/navbar';
+import navbar_thumb from '../assets/images/navbar_thumb.png';
 
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home' },
@@ -43,6 +45,7 @@ const publicRoutes = [
     { path: routes.lorem, component: Lorem, name: 'Lorem', img: lorem_thumb },
     { path: routes.color, component: Color, name: 'Color Genarate', img: color_thumb },
     { path: routes.grocery, component: Grocery, name: 'Grocery Bud', img: grocery_thumb },
+    { path: routes.navbar, component: Navbar, name: 'Navbar', img: navbar_thumb },
 ];
 
 export { publicRoutes };
