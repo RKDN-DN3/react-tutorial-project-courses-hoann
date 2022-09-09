@@ -33,6 +33,9 @@ import grocery_thumb from '../assets/images/grocery_thumb.png';
 import Navbar from '../projects/navbar';
 import navbar_thumb from '../assets/images/navbar_thumb.png';
 
+import Sidebar from '../projects/sidebar';
+import sidebar_thumb from '../assets/images/sidebar_thumb.png';
+
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home' },
     { path: routes.birthdate, component: Birthdate, name: 'Birthdates reminder', img: birthdate_thumb },
@@ -46,6 +49,7 @@ const publicRoutes = [
     { path: routes.color, component: Color, name: 'Color Genarate', img: color_thumb },
     { path: routes.grocery, component: Grocery, name: 'Grocery Bud', img: grocery_thumb },
     { path: routes.navbar, component: Navbar, name: 'Navbar', img: navbar_thumb },
+    { path: routes.sidebar, component: Sidebar, name: 'Sidebar And Modal', img: sidebar_thumb },
 ];
 
 export { publicRoutes };
