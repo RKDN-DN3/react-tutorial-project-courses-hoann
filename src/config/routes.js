@@ -11,6 +11,7 @@ const routers = {
     color: '/color-genarate',
     grocery: '/grocery-bud',
     navbar: '/navbar',
+    sidebar: '/sidebar',
 };
 
 export default routers;
