@@ -1,3 +1,6 @@
+import React from 'react';
+import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+
 export const MENUS = [
     {
         id: 1,
@@ -132,4 +135,55 @@ export const LOREM = [
     `Salvia glossier subway tile, leggings mustache YOLO semiotics chia. Pitchfork tbh af blog church-key meggings vaporware PBR&B master cleanse post-ironic man bun pabst mustache letterpress synth. Snackwave raw denim godard, 3 wolf moon shaman offal kitsch unicorn live-edge selvage schlitz fashion axe vaporware drinking vinegar prism. Shabby chic tacos artisan, chambray chicharrones cardigan leggings typewriter af pop-up williamsburg meditation PBR&B viral. You probably haven't heard of them DIY jean shorts subway tile fashion axe bushwick kitsch tumeric cloud bread vaporware freegan franzen pork belly chicharrones banh mi.`,
     `Man braid celiac synth freegan readymade, pitchfork fam salvia waistcoat lomo bitters gentrify four loko. Pitchfork semiotics post-ironic vegan. Tofu meditation microdosing hashtag semiotics venmo. Flexitarian vape tilde taiyaki. Prism poutine farm-to-table, messenger bag vegan taxidermy tattooed sartorial squid jean shorts fixie selvage trust fund vape.`,
     `Rutters Plate Fleet boom chandler Brethren of the Coast handsomely lookout marooned brigantine knave. Buccaneer gangway jack rum loot spyglass line Jack Tar fore gaff. Gaff topmast scuttle ballast swab draught measured fer yer chains dance the hempen jig Chain Shot yardarm.`,
+];
+
+export const LINKS = [
+    {
+        id: 1,
+        url: '/',
+        text: 'home',
+    },
+    {
+        id: 2,
+        url: '/about',
+        text: 'about',
+    },
+    {
+        id: 3,
+        url: '/projects',
+        text: 'projects',
+    },
+    {
+        id: 4,
+        url: '/contact',
+        text: 'contact',
+    },
+    {
+        id: 5,
+        url: '/profile',
+        text: 'profile',
+    },
+];
+
+export const SOCIALS = [
+    {
+        id: 1,
+        url: 'https://www.twitter.com',
+        icon: <FaFacebook />,
+    },
+    {
+        id: 2,
+        url: 'https://www.twitter.com',
+        icon: <FaTwitter />,
+    },
+    {
+        id: 3,
+        url: 'https://www.twitter.com',
+        icon: <FaLinkedin />,
+    },
+    {
+        id: 4,
+        url: 'https://www.twitter.com',
+        icon: <FaBehance />,
+    },
 ];
