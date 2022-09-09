@@ -46,7 +46,7 @@
     height: 40px;
     cursor: pointer;
     z-index: 100;
-    transition: all 0.3s linear;
+    transition: var(--transition);
     &:hover {
         background-color: #ba5d2c;
     }

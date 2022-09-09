@@ -28,7 +28,7 @@
     border: none;
     font-size: 1.4rem;
     cursor: pointer;
-    transition: all 0.3s linear;
+    transition: var(--transition);
     margin-bottom: 15px;
     padding: 4px 0;
 

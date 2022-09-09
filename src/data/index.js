@@ -168,7 +168,7 @@ export const LINKS = [
 export const SOCIALS = [
     {
         id: 1,
-        url: 'https://www.twitter.com',
+        url: 'https://www.fb.com',
         icon: <FaFacebook />,
     },
     {
@@ -178,12 +178,12 @@ export const SOCIALS = [
     },
     {
         id: 3,
-        url: 'https://www.twitter.com',
+        url: 'https://www.linkedin.com',
         icon: <FaLinkedin />,
     },
     {
         id: 4,
-        url: 'https://www.twitter.com',
+        url: 'https://www.behance.com',
         icon: <FaBehance />,
     },
 ];

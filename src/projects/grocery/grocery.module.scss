@@ -14,7 +14,7 @@
     background-color: white;
     border-radius: 5px;
     width: 500px;
-    transition: all 0.3s linear;
+    transition: var(--transition);
 
     &:hover {
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -44,7 +44,7 @@
     border: none;
     background-color: #a5d5f8;
     cursor: pointer;
-    transition: all 0.3s linear;
+    transition: var(--transition);
     border-radius: 0px 5px 5px 0px;
     padding: 5px 15px;
     letter-spacing: 1px;
@@ -64,7 +64,7 @@
 .todo {
     margin: 10px 0px;
     display: flex;
-    transition: all 0.3s linear;
+    transition: var(--transition);
     padding: 8px 20px;
     align-items: center;
 
@@ -85,7 +85,7 @@
     letter-spacing: 1px;
     font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s linear;
+    transition: var(--transition);
 
     &:hover {
         color: #bb2525;
