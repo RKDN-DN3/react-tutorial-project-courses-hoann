@@ -1,15 +1,9 @@
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    max-width: 1170px;
-    margin: 0 auto;
-}
-
 .header {
     letter-spacing: 1.5px;
     font-size: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 
 .name {
@@ -29,7 +23,7 @@
     text-transform: capitalize;
     letter-spacing: 1px;
     font-size: 16px;
-    transition: all 0.3s linear;
+    transition: var(--transition);
 
     &:hover {
         color: #49a6e9;
@@ -43,10 +37,52 @@
 
 .icon {
     color: #49a6e9;
-    transition: all 0.3s linear;
+    transition: var(--transition);
     margin: 0 7px;
 
     &:hover {
         color: #8bcbf9;
     }
+}
+
+.navbar-icon {
+    display: none;
+    transition: var(--transition);
+}
+
+@media screen and (max-width: 730px) {
+    .navbar-icon {
+        display: block;
+        margin-inline-start: 1em;
+    }
+    .social {
+        display: none;
+    }
+    .links {
+        display: block;
+        overflow: hidden;
+        transition: var(--transition);
+        height: 0px;
+    }
+}
+.navbar {
+    transition: var(--transition);
+}
+@media screen and (min-width: 730px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        max-width: 1170px;
+        margin: 0 auto;
+        align-items: center;
+        transition: var(--transition);
+    }
+}
+
+.isShow {
+    transition: var(--transition);
+    height: 200px;
+    line-height: 2.5;
+    margin-inline-start: -20px !important;
 }
