@@ -10,7 +10,6 @@ const routers = {
     lorem: '/lorem',
     color: '/color-genarate',
     grocery: '/grocery-bud',
-    navbar: '/navbar',
 };
 
 export default routers;
