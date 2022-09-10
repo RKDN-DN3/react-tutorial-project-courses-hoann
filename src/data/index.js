@@ -1,5 +1,15 @@
 import React from 'react';
-import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import {
+    FaBehance,
+    FaFacebook,
+    FaLinkedin,
+    FaTwitter,
+    FaHome,
+    FaUserFriends,
+    FaFolderOpen,
+    FaCalendarAlt,
+    FaWpforms,
+} from 'react-icons/fa';
 
 export const MENUS = [
     {
@@ -185,5 +195,38 @@ export const SOCIALS = [
         id: 4,
         url: 'https://www.behance.com',
         icon: <FaBehance />,
+    },
+];
+
+export const LINKS_SIDEBAR = [
+    {
+        id: 1,
+        url: '/',
+        text: 'home',
+        icon: <FaHome />,
+    },
+    {
+        id: 2,
+        url: '/team',
+        text: 'team',
+        icon: <FaUserFriends />,
+    },
+    {
+        id: 3,
+        url: '/projects',
+        text: 'projects',
+        icon: <FaFolderOpen />,
+    },
+    {
+        id: 4,
+        url: '/calendar',
+        text: 'calendar',
+        icon: <FaCalendarAlt />,
+    },
+    {
+        id: 5,
+        url: '/documents',
+        text: 'documents',
+        icon: <FaWpforms />,
     },
 ];
