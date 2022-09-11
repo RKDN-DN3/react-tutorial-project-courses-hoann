@@ -36,6 +36,9 @@ import navbar_thumb from '../assets/images/navbar_thumb.png';
 import Sidebar from '../projects/sidebar';
 import sidebar_thumb from '../assets/images/sidebar_thumb.png';
 
+import Stripe from '../projects/stripe';
+import stripe_thumb from '../assets/images/stripe_thumb.png';
+
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home' },
     { path: routes.birthdate, component: Birthdate, name: 'Birthdates reminder', img: birthdate_thumb },
@@ -50,6 +53,7 @@ const publicRoutes = [
     { path: routes.grocery, component: Grocery, name: 'Grocery Bud', img: grocery_thumb },
     { path: routes.navbar, component: Navbar, name: 'Navbar', img: navbar_thumb },
     { path: routes.sidebar, component: Sidebar, name: 'Sidebar And Modal', img: sidebar_thumb },
+    { path: routes.stripe, component: Stripe, name: 'Stripe Menu', img: stripe_thumb },
 ];
 
 export { publicRoutes };
