@@ -12,6 +12,7 @@ const routers = {
     grocery: '/grocery-bud',
     navbar: '/navbar',
     sidebar: '/sidebar',
+    stripe: '/stripe',
 };
 
 export default routers;
