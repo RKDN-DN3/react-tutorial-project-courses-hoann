@@ -1,8 +1,12 @@
+import Navbar from './Navbar';
+import Hero from './Hero';
+
 function Stripe() {
     return (
-        <div>
-            <h2>Stripe</h2>
-        </div>
+        <>
+            <Navbar />
+            <Hero />
+        </>
     );
 }
 
