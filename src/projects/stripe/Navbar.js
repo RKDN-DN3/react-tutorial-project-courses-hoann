@@ -15,10 +15,6 @@ function Navbar() {
         openSubmenu(text, { center, bottom });
     };
 
-    const handleHideSubmenu = (e) => {
-        closeSubmenu();
-    };
-
     const handleOpenModal = () => {
         openModal();
     };
@@ -44,34 +40,22 @@ function Navbar() {
                 </div>
                 <ul className={cx('nav-links')}>
                     <li>
-                        <button
-                            className={cx('link-btn')}
-                            onMouseOver={handleDisplaySubmenu}
-                            // onMouseOut={handleHideSubmenu}
-                        >
+                        <button className={cx('link-btn')} onMouseOver={handleDisplaySubmenu}>
                             products
                         </button>
                     </li>
                     <li>
-                        <button
-                            className={cx('link-btn')}
-                            onMouseOver={handleDisplaySubmenu}
-                            // onMouseOut={handleHideSubmenu}
-                        >
+                        <button className={cx('link-btn')} onMouseOver={handleDisplaySubmenu}>
                             developers
                         </button>
                     </li>
                     <li>
-                        <button
-                            className={cx('link-btn')}
-                            onMouseOver={handleDisplaySubmenu}
-                            // onMouseOut={handleHideSubmenu}
-                        >
+                        <button className={cx('link-btn')} onMouseOver={handleDisplaySubmenu}>
                             company
                         </button>
                     </li>
                 </ul>
-                <button className={cx('btn', 'signin-btn')}>Sign in</button>
+                <button className={cx('btn', 'signing-btn')}>Sign in</button>
             </div>
         </div>
     );
