@@ -13,6 +13,7 @@ const routers = {
     navbar: '/navbar',
     sidebar: '/sidebar',
     stripe: '/stripe',
+    card: '/card',
 };
 
 export default routers;

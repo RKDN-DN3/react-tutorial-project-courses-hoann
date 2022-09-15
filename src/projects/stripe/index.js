@@ -3,13 +3,17 @@ import Hero from './Hero';
 import Submenu from './Submenu';
 import Sidebar from './Sidebar';
 
+import { AppProvider } from './context';
+
 function Stripe() {
     return (
         <>
-            <Navbar />
-            <Hero />
-            <Submenu />
-            <Sidebar />
+            <AppProvider>
+                <Navbar />
+                <Hero />
+                <Submenu />
+                <Sidebar />
+            </AppProvider>
         </>
     );
 }
