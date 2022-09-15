@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from 'react';
 import classnames from 'classnames/bind';
 import styles from './submenu.module.scss';
 import { useGlobalContext } from './context';
@@ -5,18 +6,40 @@ import { useGlobalContext } from './context';
 const cx = classnames.bind(styles);
 
 function SubMenu() {
-    const {} = useGlobalContext();
+    const container = useRef(null);
+
+    const {
+        page: { page, links },
+        location,
+        isSubmenuOpen,
+    } = useGlobalContext();
+
+    const [columns, setColumns] = useState('col-2');
+
+    useEffect(() => {
+        setColumns('col-2');
+        const submenu = container.current;
+        const { center, bottom } = location;
+        submenu.style.left = `${center}px`;
+        submenu.style.top = `${bottom}px`;
+        if (links.length === 3) {
+            setColumns('col-3');
+        }
+        if (links.length > 3) {
+            setColumns('col-4');
+        }
+    }, [page, location, links]);
+
     return (
-        <aside className={cx('submenu')}>
+        <aside ref={container} className={cx('submenu', isSubmenuOpen && 'show')}>
             <section>
-                <h4>{page}</h4>
-                <div className={`submenu-center ${columns}`}>
+                <h4 style={{ textTransform: 'capitalize' }}>{page}</h4>
+                <div className={cx('submenu-center', columns)}>
                     {links.map((link, index) => {
-                        const { url, icon, label } = link;
                         return (
-                            <a key={index} href={url}>
-                                {icon}
-                                {label}
+                            <a key={index} href={link.url}>
+                                {link.icon}
+                                {link.label}
                             </a>
                         );
                     })}
