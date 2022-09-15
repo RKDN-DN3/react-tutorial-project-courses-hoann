@@ -8,12 +8,26 @@ import { useGlobalContext } from './context';
 const cx = classnames.bind(styles);
 
 function CardContainer() {
-    const { loading, cart, total } = useGlobalContext();
+    const { loading, cart, total, clearAll } = useGlobalContext();
 
     if (loading) {
-        return <Loading type="spinningBubbles" color="#2680c0" styles={{ alignItem: 'center' }} />;
+        return (
+            <div className={cx('wrapper')} style={{ display: 'flex', justifyContent: 'center' }}>
+                <Loading type="spinningBubbles" color="#2680c0" styles={{ alignItem: 'center' }} />
+            </div>
+        );
     }
 
+    if (cart.length === 0) {
+        return (
+            <div className={cx('wrapper')}>
+                <header>
+                    <h2>Your Bag</h2>
+                    <h4 class={cx('empty-cart')}>is currently empty</h4>
+                </header>
+            </div>
+        );
+    }
     return (
         <div className={cx('wrapper')}>
             <header>
@@ -31,7 +45,9 @@ function CardContainer() {
                         total <span>${total}</span>
                     </h4>
                 </div>
-                <button className={cx('btn', 'clear-btn')}>clear cart</button>
+                <button className={cx('btn', 'clear-btn')} onClick={clearAll}>
+                    clear cart
+                </button>
             </footer>
         </div>
     );

@@ -25,6 +25,18 @@ function AppProvider({ children }) {
         }, 1000);
     };
 
+    const remove = (id) => {
+        dispatch({ type: 'REMOVE', payload: id });
+    };
+
+    const clearAll = () => {
+        dispatch({ type: 'CLEAR_ALL' });
+    };
+
+    const toggleAmount = (id, type) => {
+        dispatch({ type: 'TOGGLE_AMOUNT', payload: { id, type } });
+    };
+
     useEffect(() => {
         fetchData();
     }, []);
@@ -33,7 +45,7 @@ function AppProvider({ children }) {
         dispatch({ type: 'GET_TOTALS' });
     }, [state.cart]);
 
-    return <AppContext.Provider value={{ ...state }}>{children}</AppContext.Provider>;
+    return <AppContext.Provider value={{ ...state, remove, clearAll, toggleAmount }}>{children}</AppContext.Provider>;
 }
 
 export const useGlobalContext = () => {
