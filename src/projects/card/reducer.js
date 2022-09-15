@@ -28,6 +28,25 @@ const reducer = (state, action) => {
             );
             total = parseFloat(total.toFixed(2));
             return { ...state, total, amount };
+        case 'REMOVE':
+            return { ...state, cart: state.cart.filter((item) => item.id !== action.payload) };
+        case 'CLEAR_ALL':
+            return { ...state, cart: [] };
+        case 'TOGGLE_AMOUNT':
+            let tempCart = state.cart
+                .map((cartItem) => {
+                    if (cartItem.id === action.payload.id) {
+                        if (action.payload.type === 'inc') {
+                            return { ...cartItem, amount: cartItem.amount + 1 };
+                        }
+                        if (action.payload.type === 'dec') {
+                            return { ...cartItem, amount: cartItem.amount - 1 };
+                        }
+                    }
+                    return cartItem;
+                })
+                .filter((cartItem) => cartItem.amount !== 0);
+            return { ...state, cart: tempCart };
 
         default:
             break;
