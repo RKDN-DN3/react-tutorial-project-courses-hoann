@@ -22,7 +22,7 @@ function Home() {
             </span>
             <div className={cx('courses')}>
                 {publicRoutes
-                    .filter((name) => name.name !== 'Home')
+                    .filter((name) => name.name && name.name !== 'Home')
                     .map((p, index) => (
                         <Course key={index} data={p}></Course>
                     ))}
