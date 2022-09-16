@@ -23,7 +23,7 @@ function CardContainer() {
             <div className={cx('wrapper')}>
                 <header>
                     <h2>Your Bag</h2>
-                    <h4 class={cx('empty-cart')}>is currently empty</h4>
+                    <h4 className={cx('empty-cart')}>is currently empty</h4>
                 </header>
             </div>
         );

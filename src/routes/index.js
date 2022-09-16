@@ -42,6 +42,11 @@ import stripe_thumb from '../assets/images/stripe_thumb.png';
 import Card from '../projects/card';
 import card_thumb from '../assets/images/card_thumb.png';
 
+import Cocktails from '../projects/cocktails';
+import cocktails_thumb from '../assets/images/cocktails_thumb.png';
+
+import About from '../projects/cocktails/pages/About';
+
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home' },
     { path: routes.birthdate, component: Birthdate, name: 'Birthdates reminder', img: birthdate_thumb },
@@ -58,6 +63,8 @@ const publicRoutes = [
     { path: routes.sidebar, component: Sidebar, name: 'Sidebar And Modal', img: sidebar_thumb },
     { path: routes.stripe, component: Stripe, name: 'Stripe Menu', img: stripe_thumb },
     { path: routes.card, component: Card, name: 'Card', img: card_thumb },
+    { path: routes.cocktails, component: Cocktails, name: 'Cocktails', img: cocktails_thumb },
+    { path: routes.cocktailsAbout, component: About },
 ];
 
 export { publicRoutes };

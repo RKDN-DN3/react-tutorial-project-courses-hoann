@@ -12,7 +12,7 @@ function App() {
                         const Page = rou.component;
                         return <Route key={index} path={rou.path} element={<Page />} />;
                     })}
-                    <Route path="*" element={<h1>Error</h1>}></Route>
+                    <Route path="*" element={<h1>Page Not Found</h1>}></Route>
                 </Routes>
             </div>
         </Router>
