@@ -14,6 +14,8 @@ const routers = {
     sidebar: '/sidebar',
     stripe: '/stripe',
     card: '/card',
+    cocktails: '/cocktails',
+    cocktailsAbout: 'cocktails/:about',
 };
 
 export default routers;
