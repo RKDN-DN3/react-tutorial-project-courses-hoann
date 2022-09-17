@@ -15,7 +15,8 @@ const routers = {
     stripe: '/stripe',
     card: '/card',
     cocktails: '/cocktails',
-    cocktailsAbout: 'cocktails/:about',
+    cocktailsAbout: 'cocktails/about',
+    cocktailsDetail: 'cocktails/:id',
 };
 
 export default routers;
