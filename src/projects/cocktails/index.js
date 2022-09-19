@@ -1,9 +1,15 @@
-import Navbar from './Navbar';
+import Cocktails from './components/Cocktails';
+
+import { AppProvider } from './context';
+import Search from './components/Search';
 
 function Index() {
     return (
         <>
-            <Navbar />
+            <AppProvider>
+                <Search />
+                <Cocktails />
+            </AppProvider>
         </>
     );
 }

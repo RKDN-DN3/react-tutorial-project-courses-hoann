@@ -3,6 +3,11 @@ a {
     color: black;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
+
 // navbar
 
 .wrapper {
@@ -44,4 +49,218 @@ a {
 }
 .nav-links a:hover {
     color: #476a2e;
+}
+
+//about page
+
+.section {
+    padding: 5rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    margin-top: 1rem;
+}
+
+.about-section {
+    width: 85vw;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+.about-section p {
+    line-height: 2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+//cocktails
+
+.cocktails-center {
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+    .cocktails-center {
+        grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
+    }
+}
+
+//cocktail
+
+.cocktail {
+    background: white;
+    margin-bottom: 2rem;
+    box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    transition: var(--transition);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border-radius: var(--radius);
+}
+.cocktail:hover {
+    box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.cocktail img {
+    height: 20rem;
+    object-fit: cover;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.cocktail-footer {
+    padding: 1.5rem;
+}
+
+.cocktail-footer h3,
+.cocktail-footer h4,
+.cocktail-footer p {
+    margin-bottom: 0.3rem;
+}
+.cocktail-footer h3 {
+    font-size: 2rem;
+}
+.cocktail-footer p {
+    color: var(--darkGrey);
+    margin-bottom: 0.5rem;
+}
+
+.btn,
+.btn-white,
+.btn-primary {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+    padding: 0.45rem 0.8rem;
+    display: inline-block;
+    transition: var(--transition);
+    cursor: pointer;
+    font-size: 0.8rem;
+    background: transparent;
+    border-radius: var(--radius);
+    display: inline-block;
+}
+.btn:hover {
+    background: var(--primaryColor);
+    color: white;
+}
+.btn-white {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+.btn-white:hover {
+    background: white;
+    color: var(--primaryColor);
+}
+.btn-primary {
+    background: var(--primaryColor);
+    color: white;
+    border-color: transparent;
+}
+.btn-primary:hover {
+    background: #d4e6a5;
+    color: var(--primaryColor);
+}
+.btn-block {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: var(--lightShadow);
+    text-align: center;
+}
+.btn-details {
+    padding: 0.25rem 0.4rem;
+}
+.btn-details:hover {
+    background: #d4e6a5;
+    border-color: #d4e6a5;
+}
+
+//Search
+
+.search {
+    margin-top: 1rem;
+    padding-bottom: 0;
+}
+
+.search-form {
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 40rem;
+    background: white;
+    padding: 2rem 2.5rem;
+    text-transform: capitalize;
+    border-radius: var(--radius);
+    box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    color: #476a2e;
+}
+.form-control input {
+    width: 100%;
+    border: none;
+    border-color: transparent;
+    background: #f1f5f8;
+    border-radius: var(--radius);
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+// detail
+
+.cocktail-section {
+    text-align: center;
+}
+
+.drink {
+    width: 85vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: left;
+}
+.drink img {
+    border-radius: var(--radius);
+}
+.drink p {
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 1.8;
+}
+.drink span {
+    margin-right: 0.5rem;
+}
+
+.drink-data {
+    background: #d4e6a5;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius);
+    color: #476a2e;
+}
+.drink-info {
+    padding-top: 2rem;
+}
+@media screen and (min-width: 992px) {
+    .drink {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 3rem;
+        align-items: center;
+    }
+    .drink-info {
+        padding-top: 0;
+    }
 }

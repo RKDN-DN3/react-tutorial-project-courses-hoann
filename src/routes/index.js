@@ -46,6 +46,8 @@ import Cocktails from '../projects/cocktails';
 import cocktails_thumb from '../assets/images/cocktails_thumb.png';
 
 import About from '../projects/cocktails/pages/About';
+import CocktailDetail from '../projects/cocktails/components/CocktailDetail';
+import CocktailNavbar from '../projects/cocktails/Navbar';
 
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home' },
@@ -63,8 +65,9 @@ const publicRoutes = [
     { path: routes.sidebar, component: Sidebar, name: 'Sidebar And Modal', img: sidebar_thumb },
     { path: routes.stripe, component: Stripe, name: 'Stripe Menu', img: stripe_thumb },
     { path: routes.card, component: Card, name: 'Card', img: card_thumb },
-    { path: routes.cocktails, component: Cocktails, name: 'Cocktails', img: cocktails_thumb },
-    { path: routes.cocktailsAbout, component: About },
+    { path: routes.cocktails, component: Cocktails, name: 'Cocktails', img: cocktails_thumb, layout: CocktailNavbar },
+    { path: routes.cocktailsAbout, component: About, layout: CocktailNavbar },
+    { path: routes.cocktailsDetail, component: CocktailDetail, layout: CocktailNavbar },
 ];
 
 export { publicRoutes };
