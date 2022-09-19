@@ -17,6 +17,7 @@ const routers = {
     cocktails: '/cocktails',
     cocktailsAbout: 'cocktails/about',
     cocktailsDetail: 'cocktails/:id',
+    markdown: '/markdown',
 };
 
 export default routers;

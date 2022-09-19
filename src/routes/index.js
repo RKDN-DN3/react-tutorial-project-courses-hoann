@@ -49,6 +49,9 @@ import About from '../projects/cocktails/pages/About';
 import CocktailDetail from '../projects/cocktails/components/CocktailDetail';
 import CocktailNavbar from '../projects/cocktails/Navbar';
 
+import Markdown from '../projects/markdown';
+import markdown_thumb from '../assets/images/markdown_thumb.png';
+
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home' },
     { path: routes.birthdate, component: Birthdate, name: 'Birthdates reminder', img: birthdate_thumb },
@@ -68,6 +71,7 @@ const publicRoutes = [
     { path: routes.cocktails, component: Cocktails, name: 'Cocktails', img: cocktails_thumb, layout: CocktailNavbar },
     { path: routes.cocktailsAbout, component: About, layout: CocktailNavbar },
     { path: routes.cocktailsDetail, component: CocktailDetail, layout: CocktailNavbar },
+    { path: routes.markdown, component: Markdown, name: 'Markdown Preview', img: markdown_thumb },
 ];
 
 export { publicRoutes };
