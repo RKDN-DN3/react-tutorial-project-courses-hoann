@@ -18,6 +18,7 @@ const routers = {
     cocktailsAbout: 'cocktails/about',
     cocktailsDetail: 'cocktails/:id',
     markdown: '/markdown',
+    card_redux: '/card-redux',
 };
 
 export default routers;
