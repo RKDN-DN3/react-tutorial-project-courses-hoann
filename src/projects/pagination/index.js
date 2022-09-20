@@ -58,17 +58,15 @@ function Pagination() {
                         <button className={cx('prev-btn')} onClick={prePage}>
                             prev
                         </button>
-                        {data.map((item, index) => {
-                            return (
-                                <button
-                                    key={index}
-                                    className={cx('page-btn', index === page && 'active-btn')}
-                                    onClick={() => handlePage(index)}
-                                >
-                                    {index + 1}
-                                </button>
-                            );
-                        })}
+                        {data.map((item, index) => (
+                            <button
+                                key={index}
+                                className={cx('page-btn', index === page && 'active-btn')}
+                                onClick={() => handlePage(index)}
+                            >
+                                {index + 1}
+                            </button>
+                        ))}
                         <button className={cx('next-btn')} onClick={nextPage}>
                             next
                         </button>
