@@ -20,6 +20,7 @@ const routers = {
     markdown: '/markdown',
     card_redux: '/card-redux',
     random_person: '/random-person',
+    paging: '/paging',
 };
 
 export default routers;

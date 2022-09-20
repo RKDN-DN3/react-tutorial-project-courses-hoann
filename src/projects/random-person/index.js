@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import classnames from 'classnames/bind';
 import axios from 'axios';
 import { FaEnvelopeOpen, FaUser, FaCalendarTimes, FaMap, FaPhone, FaLock } from 'react-icons/fa';
-import Loading from 'react-loading';
 
 import styles from './random.module.scss';
 
