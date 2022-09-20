@@ -57,6 +57,9 @@ import CardRedux from '../projects/card-redux';
 import RandomPerson from '../projects/random-person';
 import random_thumb from '../assets/images/random_thumb.png';
 
+import Paging from '../projects/pagination';
+import paging_thumb from '../assets/images/paging_thumb.png';
+
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home', type: 'basic', display: false },
     {
@@ -126,6 +129,14 @@ const publicRoutes = [
         component: RandomPerson,
         name: 'Random Person',
         img: random_thumb,
+        type: 'exclusive',
+        display: true,
+    },
+    {
+        path: routes.paging,
+        component: Paging,
+        name: 'Pagination',
+        img: paging_thumb,
         type: 'exclusive',
         display: true,
     },
