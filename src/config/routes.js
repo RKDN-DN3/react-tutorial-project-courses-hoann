@@ -21,6 +21,7 @@ const routers = {
     card_redux: '/card-redux',
     random_person: '/random-person',
     paging: '/paging',
+    stock: '/stock-photo',
 };
 
 export default routers;

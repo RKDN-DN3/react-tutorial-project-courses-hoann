@@ -60,6 +60,9 @@ import random_thumb from '../assets/images/random_thumb.png';
 import Paging from '../projects/pagination';
 import paging_thumb from '../assets/images/paging_thumb.png';
 
+import StockPhotos from '../projects/stock';
+import stock_thumb from '../assets/images/stock_thumb.png';
+
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home', type: 'basic', display: false },
     {
@@ -137,6 +140,14 @@ const publicRoutes = [
         component: Paging,
         name: 'Pagination',
         img: paging_thumb,
+        type: 'exclusive',
+        display: true,
+    },
+    {
+        path: routes.stock,
+        component: StockPhotos,
+        name: 'Stock Photos',
+        img: stock_thumb,
         type: 'exclusive',
         display: true,
     },
