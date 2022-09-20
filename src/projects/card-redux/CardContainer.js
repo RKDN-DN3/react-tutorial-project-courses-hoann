@@ -4,12 +4,14 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import CartItem from './CartItem';
 import styles from './card.module.scss';
-import { removeAll } from './features/cart/cartSlice';
+import { showModal } from './features/modal/modalSlice';
+import Modal from './Modal';
 
 const cx = classnames.bind(styles);
 function CardContainer() {
     const dispatch = useDispatch();
     const { isLoading, cartItems, total } = useSelector((state) => state.cart);
+    const { isShow } = useSelector((state) => state.modal);
 
     if (isLoading) {
         return (
@@ -31,6 +33,7 @@ function CardContainer() {
     }
     return (
         <div className={cx('wrapper')}>
+            {isShow && <Modal />}
             <header>
                 <h2>Your Bag</h2>
             </header>
@@ -46,7 +49,7 @@ function CardContainer() {
                         total <span>${total}</span>
                     </h4>
                 </div>
-                <button className={cx('btn', 'clear-btn')} onClick={() => dispatch(removeAll())}>
+                <button className={cx('btn', 'clear-btn')} onClick={() => dispatch(showModal())}>
                     clear cart
                 </button>
             </footer>
