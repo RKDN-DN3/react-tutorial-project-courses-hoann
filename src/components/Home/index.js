@@ -18,11 +18,29 @@ function Home() {
                     marginBottom: '3rem',
                 }}
             >
-                All project in Reactjs course
+                Basic project
             </span>
             <div className={cx('courses')}>
                 {publicRoutes
-                    .filter((name) => name.name && name.name !== 'Home')
+                    .filter((name) => name.display && name.type === 'basic')
+                    .map((p, index) => (
+                        <Course key={index} data={p}></Course>
+                    ))}
+            </div>
+            <span
+                style={{
+                    textAlign: 'center',
+                    fontSize: '2rem',
+                    fontWeight: 600,
+                    marginTop: '30px',
+                    marginBottom: '3rem',
+                }}
+            >
+                Course Exclusive
+            </span>
+            <div className={cx('courses')}>
+                {publicRoutes
+                    .filter((name) => name.display && name.type === 'exclusive')
                     .map((p, index) => (
                         <Course key={index} data={p}></Course>
                     ))}
