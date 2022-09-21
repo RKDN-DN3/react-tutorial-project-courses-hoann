@@ -1,9 +1,9 @@
+import { useEffect, useState } from 'react';
 import classnames from 'classnames/bind';
 
 import styles from './darkmode.module.scss';
 import { ARTICLES } from '../../data';
 import Article from './Article';
-import { useEffect, useState } from 'react';
 
 const cx = classnames.bind(styles);
 function DarkMode() {
@@ -34,6 +34,7 @@ function DarkMode() {
         document.getElementsByClassName('app')[0].style.background = backgroundColor;
         element[0].style.color = color;
         document.querySelectorAll('h2').forEach((item) => (item.style.color = h2Color));
+        document.querySelectorAll('p').forEach((item) => (item.style.color = color));
 
         localStorage.setItem('theme', theme);
     }, [theme]);
