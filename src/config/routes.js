@@ -23,6 +23,7 @@ const routers = {
     paging: '/paging',
     stock: '/stock-photo',
     dark: '/dark-mode',
+    movie: '/movie-store',
 };
 
 export default routers;
