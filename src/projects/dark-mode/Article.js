@@ -1,10 +1,16 @@
+import classnames from 'classnames/bind';
+
+import styles from './darkmode.module.scss';
+
+const cx = classnames.bind(styles);
+
 function Article({ title, snippet, date, length }) {
+    console.log(date);
     return (
-        <article className="post">
+        <article className={cx('post')}>
             <h2>{title}</h2>
-            <div className="post-info">
-                {/* <span>{moment(date).format('dddd Do, YYYY')}</span> */}
-                <span></span>
+            <div className={cx('post-info')}>
+                <span>{date.toDateString()}</span>
                 <span>{length} min read</span>
             </div>
             <p>{snippet}</p>
