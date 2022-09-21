@@ -22,6 +22,7 @@ const routers = {
     random_person: '/random-person',
     paging: '/paging',
     stock: '/stock-photo',
+    dark: '/dark-mode',
 };
 
 export default routers;
