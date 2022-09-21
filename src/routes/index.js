@@ -68,6 +68,7 @@ import darkmode_thumb from '../assets/images/darkmode_thumb.png';
 
 import Movie from '../projects/movie-store';
 import movie_thumb from '../assets/images/movie_thumb.png';
+import SingleMovie from '../projects/movie-store/SingleMovie';
 
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home', type: 'basic projects', display: false },
@@ -214,6 +215,11 @@ const publicRoutes = [
         img: movie_thumb,
         type: 'course exclusive',
         display: true,
+    },
+    {
+        path: routes.movie_detail,
+        component: SingleMovie,
+        display: false,
     },
 ];
 

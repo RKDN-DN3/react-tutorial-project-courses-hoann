@@ -24,6 +24,7 @@ const routers = {
     stock: '/stock-photo',
     dark: '/dark-mode',
     movie: '/movie-store',
+    movie_detail: 'movie-store/:id',
 };
 
 export default routers;
