@@ -7,13 +7,16 @@ import Article from './Article';
 
 const cx = classnames.bind(styles);
 function DarkMode() {
-    const [theme, setTheme] = useState('light-theme');
+    const themStore = localStorage.getItem('theme');
+    const [theme, setTheme] = useState(themStore);
 
     const toggleTheme = () => {
         if (theme === 'light-theme') {
             setTheme('dark-theme');
+            localStorage.setItem('theme', 'dark-theme');
         } else {
             setTheme('light-theme');
+            localStorage.setItem('theme', 'light-theme');
         }
     };
 
