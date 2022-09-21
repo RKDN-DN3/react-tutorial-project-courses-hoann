@@ -66,6 +66,9 @@ import stock_thumb from '../assets/images/stock_thumb.png';
 import DarkMode from '../projects/dark-mode';
 import darkmode_thumb from '../assets/images/darkmode_thumb.png';
 
+import Movie from '../projects/movie-store';
+import movie_thumb from '../assets/images/movie_thumb.png';
+
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home', type: 'basic projects', display: false },
     {
@@ -201,6 +204,14 @@ const publicRoutes = [
         component: DarkMode,
         name: 'Dark Mode',
         img: darkmode_thumb,
+        type: 'course exclusive',
+        display: true,
+    },
+    {
+        path: routes.movie,
+        component: Movie,
+        name: 'Movie DB',
+        img: movie_thumb,
         type: 'course exclusive',
         display: true,
     },
