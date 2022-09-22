@@ -25,6 +25,7 @@ const routers = {
     dark: '/dark-mode',
     movie: '/movie-store',
     movie_detail: 'movie-store/:id',
+    hacker_new: '/hacker-new',
 };
 
 export default routers;

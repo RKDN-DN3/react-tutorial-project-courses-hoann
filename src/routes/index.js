@@ -70,6 +70,9 @@ import Movie from '../projects/movie-store';
 import movie_thumb from '../assets/images/movie_thumb.png';
 import SingleMovie from '../projects/movie-store/SingleMovie';
 
+import HackerNew from '../projects/hacker-new';
+import hackernew_thumb from '../assets/images/hackernew_thumb.png';
+
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home', type: 'basic projects', display: false },
     {
@@ -220,6 +223,14 @@ const publicRoutes = [
         path: routes.movie_detail,
         component: SingleMovie,
         display: false,
+    },
+    {
+        path: routes.hacker_new,
+        component: HackerNew,
+        name: 'Hacker News',
+        img: hackernew_thumb,
+        type: 'course exclusive',
+        display: true,
     },
 ];
 
