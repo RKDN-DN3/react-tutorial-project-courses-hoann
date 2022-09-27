@@ -1,0 +1,35 @@
+.navbar {
+    padding: 1.5rem;
+    margin-bottom: 4rem;
+    background: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto 100px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    img {
+        height: 35px;
+        border-radius: 50%;
+        object-fit: cover;
+        width: 35px !important;
+    }
+
+    h4 {
+        margin-bottom: 0px;
+        font-weight: 400;
+    }
+
+    button {
+        background: transparent;
+        border: transparent;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        color: #617d98;
+        cursor: pointer;
+    }
+}

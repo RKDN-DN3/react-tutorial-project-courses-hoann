@@ -26,6 +26,9 @@ const routers = {
     movie: '/movie-store',
     movie_detail: 'movie-store/:id',
     hacker_new: '/hacker-new',
+    quiz: '/quiz',
+    github_users: '/github-users',
+    github_users_login: '/github-users/login',
 };
 
 export default routers;

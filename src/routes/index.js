@@ -73,6 +73,13 @@ import SingleMovie from '../projects/movie-store/SingleMovie';
 import HackerNew from '../projects/hacker-new';
 import hackernew_thumb from '../assets/images/hackernew_thumb.png';
 
+import Quiz from '../projects/quiz';
+import quiz_thumb from '../assets/images/quiz_thumb.png';
+
+import Github from '../projects/github-users';
+import githubuser_thumb from '../assets/images/githubuser_thumb.png';
+import Login from '../projects/github-users/Pages/Login';
+
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home', type: 'basic projects', display: false },
     {
@@ -231,6 +238,27 @@ const publicRoutes = [
         img: hackernew_thumb,
         type: 'course exclusive',
         display: true,
+    },
+    {
+        path: routes.quiz,
+        component: Quiz,
+        name: 'Quiz',
+        img: quiz_thumb,
+        type: 'course exclusive',
+        display: true,
+    },
+    {
+        path: routes.github_users,
+        component: Github,
+        name: 'Github Users',
+        img: githubuser_thumb,
+        type: 'large-Scale projects',
+        display: true,
+    },
+    {
+        path: routes.github_users_login,
+        component: Login,
+        display: false,
     },
 ];
 
