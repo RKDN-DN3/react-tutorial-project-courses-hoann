@@ -1,5 +1,7 @@
 import { useEffect, useState, useContext, createContext } from 'react';
 import axios from 'axios';
+import { useAuth0 } from '@auth0/auth0-react';
+import Loading from 'react-loading';
 
 import dataUser from './data/user';
 import repos from './data/repo';
@@ -9,6 +11,8 @@ const AppContext = createContext();
 const rootUrl = 'https://api.github.com';
 
 function AppProvider({ children }) {
+    const { loginWithRedirect, isAuthenticated, logout, user, isLoading } = useAuth0();
+
     const [githubUser, setGithubUser] = useState(dataUser);
     const [githubRepo, setGithubRepo] = useState(repos);
     const [githubFollow, setGithubFollow] = useState(followers);
@@ -32,13 +36,11 @@ function AppProvider({ children }) {
             setLoading(false);
         });
         if (res) {
-            setTimeout(() => {
-                setGithubUser(res.data);
-                getFollowers(`${url}/followers`);
-                getRepo(`${url}/repos?per_page=100`);
-                setError({});
-                setLoading(false);
-            }, 2000);
+            setGithubUser(res.data);
+            getFollowers(`${url}/followers?per_page=100`);
+            getRepo(`${url}/repos?per_page=100`);
+            setError({});
+            setLoading(false);
         } else {
             setError({ error: true, msg: 'There Is No User With That Username' });
         }
@@ -61,6 +63,14 @@ function AppProvider({ children }) {
     useEffect(() => {
         checkRequest();
     }, []);
+
+    if (isLoading) {
+        return (
+            <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '20rem' }}>
+                <Loading type="spinningBubbles" color="#2caeba" />
+            </div>
+        );
+    }
 
     return (
         <AppContext.Provider

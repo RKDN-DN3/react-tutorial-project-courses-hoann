@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import Loading from 'react-loading';
 
+import Navbar from '../components/Navbar';
 import Search from '../components/Search';
 import UserInfo from '../components/UserInfo';
 import Info from '../components/Info';
@@ -12,6 +13,7 @@ function Dashboard() {
     const { loading } = useGlobalContext();
     return (
         <div>
+            <Navbar />
             <Search />
             {!loading ? (
                 <Fragment>

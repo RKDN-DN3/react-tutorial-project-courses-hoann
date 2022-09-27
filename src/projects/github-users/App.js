@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
 import Loading from 'react-loading';
 import { useNavigate } from 'react-router-dom';
 
@@ -6,17 +7,11 @@ import Login from './Pages/Login';
 import Dashboard from './Pages/Dashboard';
 
 function GithubUsers() {
-    const [loading, setLoading] = useState(true);
-    const [login, setLogin] = useState(false);
+    const { loginWithRedirect, isAuthenticated, logout, user, isLoading } = useAuth0();
 
     const navigate = useNavigate();
-    if (login) {
-        navigate('/github-users/login');
-        // return (
-        //     <div style={{ display: 'flex', justifyContent: 'center' }}>
-        //         <Loading type="spinningBubbles" color="#2caeba"></Loading>
-        //     </div>
-        // );
+    if (!isAuthenticated) {
+        return <Login />;
     }
 
     return (
