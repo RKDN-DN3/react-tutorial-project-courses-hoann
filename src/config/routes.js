@@ -29,6 +29,7 @@ const routers = {
     quiz: '/quiz',
     github_users: '/github-users',
     github_users_login: '/github-users/login',
+    jobster: '/jobster',
 };
 
 export default routers;

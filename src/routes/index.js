@@ -80,6 +80,9 @@ import Github from '../projects/github-users';
 import githubuser_thumb from '../assets/images/githubuser_thumb.png';
 import Login from '../projects/github-users/Pages/Login';
 
+import Jobster from '../projects/jobster';
+import jobster_thumb from '../assets/images/jobster_thumb.png';
+
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home', type: 'basic projects', display: false },
     {
@@ -259,6 +262,14 @@ const publicRoutes = [
         path: routes.github_users_login,
         component: Login,
         display: false,
+    },
+    {
+        path: routes.jobster,
+        component: Jobster,
+        name: 'Jobster',
+        img: jobster_thumb,
+        type: 'large-Scale projects',
+        display: true,
     },
 ];
 
