@@ -9,7 +9,14 @@ function FormRow({ type, name, value, handleChange, labelText }) {
             <label htmlFor="name" className={cx('form-label')}>
                 {labelText || name}
             </label>
-            <input id={name} type={type} name={name} value={value} className={cx('form-input')} />
+            <input
+                id={name}
+                type={type}
+                name={name}
+                value={value}
+                className={cx('form-input')}
+                onChange={handleChange}
+            />
         </div>
     );
 }

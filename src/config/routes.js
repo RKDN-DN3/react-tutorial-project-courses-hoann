@@ -31,6 +31,10 @@ const routers = {
     github_users_login: '/github-users/login',
     jobster: '/jobster',
     jobster_register: '/jobster/register',
+    jobster_dashboard: '/jobster/dashboard',
+    jobster_alljobs: '/jobster/all-jobs',
+    jobster_addjob: '/jobster/add-job',
+    jobster_profile: '/jobster/profile',
 };
 
 export default routers;

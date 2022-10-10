@@ -30,3 +30,10 @@
     --clr-black: #222;
     --primaryColor: #476a2e;
 }
+
+.active {
+    color: #102a43;
+    span {
+        color: #3b82f6;
+    }
+}

@@ -83,6 +83,11 @@ import Login from '../projects/github-users/Pages/Login';
 import Jobster from '../projects/jobster';
 import jobster_thumb from '../assets/images/jobster_thumb.png';
 import Register from '../projects/jobster/pages/Register';
+import Dashboard from '../projects/jobster/pages/dashboards';
+import AllJobs from '../projects/jobster/pages/dashboards/AllJobs';
+import AddJob from '../projects/jobster/pages/dashboards/AddJob';
+import Profile from '../projects/jobster/pages/dashboards/Profile';
+import Stats from '../projects/jobster/pages/dashboards/Stats';
 
 const publicRoutes = [
     { path: routes.home, component: Home, name: 'Home', type: 'basic projects', display: false },
@@ -276,6 +281,30 @@ const publicRoutes = [
         path: routes.jobster_register,
         component: Register,
         display: false,
+    },
+    {
+        path: routes.jobster_dashboard,
+        component: Stats,
+        display: false,
+        layout: Dashboard,
+    },
+    {
+        path: routes.jobster_alljobs,
+        component: AllJobs,
+        display: false,
+        layout: Dashboard,
+    },
+    {
+        path: routes.jobster_addjob,
+        component: AddJob,
+        display: false,
+        layout: Dashboard,
+    },
+    {
+        path: routes.jobster_profile,
+        component: Profile,
+        display: false,
+        layout: Dashboard,
     },
 ];
 
